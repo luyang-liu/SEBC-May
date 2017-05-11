@@ -1,30 +1,35 @@
-﻿curl -X POST -u "admin:admin"  http://ec2-54-191-94-126.us-west-2.compute.amazonaws.com:7180/api/v14/clusters/luyang-liu/services/hive/commands/stop
+﻿* curl -X POST -u "admin:admin"  http://ec2-54-191-94-126.us-west-2.compute.amazonaws.com:7180/api/v14/clusters/luyang-liu/services/hive/commands/stop
+```
+ {
+    "id" : 1075,
+    "name" : "Stop",
+    "startTime" : "2017-05-11T01:15:48.696Z",
+    "active" : true,
+    "serviceRef" : {
+      "clusterName" : "cluster",
+      "serviceName" : "hive"
+    }
+  }   
+```
+   
+* curl -X POST -u "admin:admin"  http://ec2-54-191-94-126.us-west-2.compute.amazonaws.com:7180/api/v14/clusters/luyang-liu/services/hive/commands/start
+``` 
 {
-  "id" : 1075,
-  "name" : "Stop",
-  "startTime" : "2017-05-11T01:15:48.696Z",
-  "active" : true,
-  "serviceRef" : {
-    "clusterName" : "cluster",
-    "serviceName" : "hive"
-  }
-}
+    "id" : 1078,
+    "name" : "Start",
+    "startTime" : "2017-05-11T01:16:15.882Z",
+    "active" : true,
+    "serviceRef" : {
+      "clusterName" : "cluster",
+      "serviceName" : "hive"
+    }
+  } 
+   
+```
 
- curl -X POST -u "admin:admin"  http://ec2-54-191-94-126.us-west-2.compute.amazonaws.com:7180/api/v14/clusters/luyang-liu/services/hive/commands/start
-{
-  "id" : 1078,
-  "name" : "Start",
-  "startTime" : "2017-05-11T01:16:15.882Z",
-  "active" : true,
-  "serviceRef" : {
-    "clusterName" : "cluster",
-    "serviceName" : "hive"
-  }
-}
-
-
-curl -X GET -u "admin:admin"  http://ec2-54-191-94-126.us-west-2.compute.amazonaws.com:7180/api/v14/clusters/luyang-liu/services/hive
-{
+* curl -X GET -u "admin:admin"  http://ec2-54-191-94-126.us-west-2.compute.amazonaws.com:7180/api/v14/clusters/luyang-liu/services/hive
+```
+ {
   "name" : "hive",
   "type" : "HIVE",
   "clusterRef" : {
@@ -49,4 +54,5 @@ curl -X GET -u "admin:admin"  http://ec2-54-191-94-126.us-west-2.compute.amazona
   "maintenanceOwners" : [ ],
   "displayName" : "Hive",
   "entityStatus" : "GOOD_HEALTH"
-}
+} 
+```

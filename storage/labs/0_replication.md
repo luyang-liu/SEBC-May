@@ -1,7 +1,6 @@
-﻿0_replication.md:
-
+﻿
 ### source directories
-
+```
 Connecting to namenode via http://ip-172-31-17-23.us-west-2.compute.internal:50070
 FSCK started by root (auth:SIMPLE) from /172.31.21.165 for path /user/root/teragen/test-input500M at Tue May 09 20:56:12 EDT 2017
 /user/root/teragen/test-input500M <dir>
@@ -58,8 +57,9 @@ FSCK ended at Tue May 09 20:56:12 EDT 2017 in 4 milliseconds
 
 The filesystem under path '/user/root/teragen/test-input500M' is HEALTHY
 
-
-### target directories
+```
+### target directories 
+```
 Connecting to namenode via http://ip-172-31-17-23.us-west-2.compute.internal:50070
 FSCK started by root (auth:SIMPLE) from /172.31.21.165 for path /user/root/teragen/test-output500M at Tue May 09 20:58:32 EDT 2017
 /user/root/teragen/test-output500M <dir>
@@ -115,3 +115,4 @@ FSCK ended at Tue May 09 20:58:32 EDT 2017 in 3 milliseconds
 
 
 The filesystem under path '/user/root/teragen/test-output500M' is HEALTHY
+```
